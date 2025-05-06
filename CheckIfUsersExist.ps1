@@ -1,4 +1,5 @@
 #What this does: This script obtains ALL like domain addresses, inserts them all into one single variable, then runs a foreach loop to check against a CSV of UPNs you provide to see if they already exist. If they do, it exports them to a new CSV.
+#We needed this script because we had an on-prem AD server as the source of truth(for entra) for users inside an ERP system. Entra will tell you if the users already exist, but not if you have to create the users in on-prem first :)
 
 #CSV file should have a column named UPN with pyebarkerfs.com domain UPNs you wish to check in that columns rows
 $importPath = "C:\path\to\users.csv"
