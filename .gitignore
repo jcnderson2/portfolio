@@ -1,0 +1,15 @@
+# General
+*.log
+*.tmp
+*.bak
+
+# Minikube/Kubernetes
+.minikube/
+kubeconfig
+
+# macOS
+.DS_Store
+
+# Editor files
+.vscode/
+*.swp
