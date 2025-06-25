@@ -1,2 +1,2 @@
-# portfolio
-This is my portfolio of code. I will place scripts here That I have made to either showcase for work or to simply save them because... I need to save them :)
+# This is my portfolio
+I will place scripts here that I am proud of as well as things to showcase my knowledge of certain technologies
