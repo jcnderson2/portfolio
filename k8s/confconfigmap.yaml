@@ -11,7 +11,7 @@ data:
         server_name localhost;
         location / {
           root /usr/share/nginx/html;
-          index index.html;
+          index index.html index.htm;
         }
         location /health {
           return 200 'OK';
@@ -19,16 +19,3 @@ data:
         }
       }
     }
-  index.html: |
-    <!DOCTYPE html>
-    <html>
-    <head>
-      <title>My Kubernetes Basics Project</title>
-      <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
-      </style>
-    </head>
-    <body>
-      <h1>this page works? :D</h1>
-    </body>
-    </html>
