@@ -1,6 +1,10 @@
 #!/bin/bash
 
-# I wanted to create this as a script we could add to our linux VMs to quickly test health
+# What this does:
+# It outputs basic statistic information from the system its ran on to '/var/logs/health-check-DATEANDTIME.log'
+
+# Why this was made:
+# Uploading this to our tenants' screenconnect toolbox simply allows us to get this information quicker when troubleshooting linux machines which are not always servers.
 
 TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
 LOGFILE="/var/log/health-check-$TIMESTAMP.log"
