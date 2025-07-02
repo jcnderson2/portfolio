@@ -37,7 +37,7 @@ ps -eo pid,comm,%mem,%cpu,args --sort=-%mem | cut -c -120 | head -n 6 | tee -a "
 
 # Top 5 processes by CPU
 echo -e "\n[+] Top 5 Processes by CPU:" | tee -a "$LOGFILE"
-ps -eo pid,comm,%mem,%cpu,args --sort=-%cpu | cut -c -120 | awk 'NR<=6' | tee -a "$LOGFILE"
+ps -eo pid,comm,%mem,%cpu,args --sort=-%cpu | awk 'NR==1 || NR<=6' | tee -a "$LOGFILE"
 
 # Failed services
 echo -e "\n[+] Failed Services:" | tee -a "$LOGFILE"
