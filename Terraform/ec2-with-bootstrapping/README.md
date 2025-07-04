@@ -1,0 +1,1 @@
+### Basic EC2 instance with bootstrapping
