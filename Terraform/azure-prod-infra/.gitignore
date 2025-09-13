@@ -1,0 +1,17 @@
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.crash/
+*.tfvars
+override.tf
+override.tf.json
+.terraform.lock.hcl
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+
+# Dev
+.env
